@@ -8,7 +8,22 @@ This repository contains the code and experimental results accompanying the pape
 
 Many real-world networked systems exhibit **higher-order interactions**, where the evolution of a state depends on multiple other states simultaneously. Examples arise in ecological systems, biological regulation, and engineered infrastructure networks. While structural controllability is well understood for graph-based systems with pairwise interactions, analogous theory for **hypergraph systems** remains largely undeveloped.
 
-This work develops a **structural controllability framework for hypergraphs** by modeling hypergraph dynamics using polynomial dynamical systems. The resulting framework extends classical graph-based structural control theory to systems with higher-order interactions. The key idea is to represent the sparsity structure of polynomial dynamics using **directed hypergraphs**, allowing controllability properties to be analyzed using topology rather than precise parameter values.
+This work develops a **structural controllability framework for hypergraphs** by modeling hypergraph dynamics using polynomial dynamical systems. The resulting framework extends classical graph-based structural control theory to systems with higher-order interactions. The key idea is to represent the sparsity structure of polynomial dynamics using **directed hypergraphs**, allowing controllability properties to be analyzed using topology rather than precise parameter values. This work extends graph based definitions of vertex accessibility, dilations, and structural controllability to hypergraphs as shown here:
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/Jpickard1/hypergraph-structural-control/blob/main/figures/fig1.png" width="450">
+</p>
+
+<p align="left">
+<em>
+Figure 1: Hypergraph walk, accessibility, and dilation. This hypergraph is not structurally controllable.
+Hyperedges are uniquely colored, and nodes are shaded to match the color of their incident hyperedge head.
+Hyperedges are numbered according to the order they may appear in a walk originating at the control node.
+The black and dark purple nodes are inaccessible, and the light purple nodes form a dilation.
+</em>
+</p>
 
 ## Main Contributions
 
